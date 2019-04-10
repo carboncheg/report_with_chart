@@ -14,11 +14,18 @@ const options = {
     title: {
         text: "Goods"
     },
-    series: [
-        {
-            data: [1, 6, 5, 2, 4, 3]
+    xAxis: {
+        title: {
+            text: 'Feature 1'
         }
-    ]
+    },
+    yAxis: {
+        title: {
+            text: 'Feature 2'
+        }
+    },
+
+    series: DataRow
 };
 
 const App = () => (
