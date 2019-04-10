@@ -31,6 +31,14 @@ const options = {
 const App = () => (
     <div>
         <HighchartsReact highcharts = {Highcharts} options = {options} />
+        <select>
+            <option>2015</option>
+            <option>2016</option>
+        </select>
+        <select>
+            <option>Goods</option>
+            <option>Categories</option>
+        </select>
     </div>
 )
 
