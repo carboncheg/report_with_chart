@@ -9,8 +9,8 @@ import * as serviceWorker from './serviceWorker';
 class Main extends React.Component {
     render() {
         return (
-            <div>
-                <div class = "inner">
+            <div className = "wrapper">
+                <div className = "inner">
                     <Navigation />
                 </div>
                 <Footer />
