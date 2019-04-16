@@ -6,6 +6,16 @@ import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 import products from './data.js';
 
 
+const newProducts = [];
+
+for (let i in products) {
+  let innerObj = {};
+  innerObj.name = products[i].name;
+  innerObj.data = [[products[i].feature1, products[i].feature2]];
+  innerObj.year = products[i].year;
+  newProducts.push(innerObj);
+}
+
 const options = {
   chart: {
       type: "scatter",
@@ -27,8 +37,9 @@ const options = {
       layout: 'vertical',
       align: 'right'
   },
-  series: products
+  series: newProducts
 };
+
 
 const Home = () => {
   return (
